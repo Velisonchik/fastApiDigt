@@ -1,6 +1,5 @@
 import os
 import logging
-
 import uvicorn
 from fastapi import FastAPI
 from config import *

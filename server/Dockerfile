@@ -2,8 +2,8 @@ FROM python:slim
 
 WORKDIR /fastapi-digt
 
-COPY ./app ./app
+ADD main.py ./server/
+ADD config.py ./server/
 
 RUN pip3 install fastapi uvicorn
 
-CMD ["python","./app/main.py"]
