@@ -1,5 +1,7 @@
 import os
 import logging
+
+import uvicorn
 from fastapi import FastAPI
 from config import *
 
@@ -38,3 +40,6 @@ async def check_path():
 @app.get("/api/meta")
 async def show_data():
     return await check_path()
+
+if __name__ == '__main__':
+    uvicorn.run(app, port=8000, host="0.0.0.0")

@@ -1,1 +1,0 @@
-defaul_path = "."
