@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from config import *
 
 app = FastAPI()
-logging.basicConfig(filename="errors.log", filemode="w", level=logging.ERROR, encoding='utf-8')
+logging.basicConfig(filename="errors.log", filemode="w", level=logging.ERROR)
 
 
 def get_type(fn):
